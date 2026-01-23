@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables (PRIVATE - API keys)
+.env
+.env.local
+.env.production
+
+# Source files (PRIVATE - never commit)
+src/
+
+# Config files
+vite.config.js
+package.json
+
+# Only allow built files
+!dist/**
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
