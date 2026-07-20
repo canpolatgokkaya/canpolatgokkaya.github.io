@@ -1,0 +1,7 @@
+#!/bin/sh
+# Strip Cursor co-author trailers from commit messages.
+msg_file="$1"
+if [ -f "$msg_file" ]; then
+  grep -vi '^co-authored-by: cursor <cursoragent@cursor.com>$' "$msg_file" > "${msg_file}.tmp" || true
+  mv "${msg_file}.tmp" "$msg_file"
+fi

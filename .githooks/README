@@ -1,0 +1,4 @@
+# Enable hooks once after clone:
+#   git config core.hooksPath .githooks
+#
+# Blocks Cursor from adding cursoragent as co-author on commits.

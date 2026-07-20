@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables (PRIVATE - API keys)
+.env
+.env.local
+.env.production
+
+# Source files (PRIVATE - never commit)
+src/
+rss-src/
+scripts/feeds.json
+scripts/__pycache__/
+
+# RSS readable source/build artifacts (only publish encoded output)
+rss/script.js
+rss/style.css
+rss/data.v1
+
+# Config files
+vite.config.js
+package.json
+
+# Build output (only root index.html + assets/ are served)
+dist/
+!rss/dist/
+
+# Reference / private docs
+referanssitehtmlyap*.txt
+*.reference.txt
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
